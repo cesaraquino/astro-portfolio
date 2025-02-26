@@ -4,4 +4,4 @@ Portfolio hecho con Astro y TailwindCSS. El diseño fue tomado de la [comunidad 
 
 ![Portfolio](./src/assets/portfolio_design.png)
 
-[Ver sitio online](https://astro-portfolio-landingpage.netlify.app/)
+Puedes ver el sitio en funcionamiento [en este enlace](https://astro-portfolio-landingpage.netlify.app/)

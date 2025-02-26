@@ -1,0 +1,48 @@
+---
+import Heading from "./headings/Heading.astro";
+
+import ButtonGithub from "./buttons/ButtonGithub.astro";
+import ButtonX from "./buttons/ButtonX.astro";
+import ButtonFigma from "./buttons/ButtonFigma.astro";
+
+import IconMail from "./icons/IconMail.astro";
+import IconPhone from "./icons/IconPhone.astro";
+import IconCopy from "./icons/IconCopy.astro";
+---
+
+<section id="contact" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <Heading title="Get in touch" />
+    <p class="mb-6 md:mb-12 mt-[-24px] text-center text-xl max-w-xl mx-auto">
+      What’s next? Feel free to reach out to me if you're looking for a
+      developer, have a query, or simply want to connect.
+    </p>
+
+    <div class="mb-12 max-w-[596px] mx-auto text-center flex flex-col gap-4">
+      <h3
+        class="flex justify-center items-center gap-5 text-lg md:text-4xl font-semibold">
+        <IconMail />
+        <span>reachsagarshah@gmail.com</span>
+        <a href="#">
+          <IconCopy />
+        </a>
+      </h3>
+
+      <h3
+        class="flex justify-center items-center gap-5 text-lg md:text-4xl font-semibold">
+        <IconPhone />
+        <span>+91 8980500565</span>
+        <a href="#">
+          <IconCopy />
+        </a>
+      </h3>
+    </div>
+
+    <p class="text-center mb-4">You may also find me on these platforms:</p>
+    <p class="flex gap-4 justify-center items-center">
+      <ButtonGithub />
+      <ButtonX />
+      <ButtonFigma />
+    </p>
+  </div>
+</section>

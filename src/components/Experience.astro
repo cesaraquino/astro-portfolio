@@ -1,0 +1,55 @@
+---
+import Heading from "./headings/Heading.astro";
+import ItemExperience from "./blocks/ItemExperience.astro";
+
+const experiences = [
+  {
+    titleExperience: "Sr. Frontend Developer",
+    listExperience: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, asperiores!",
+      "Lorem ipsum dolor sit amet.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+    ],
+    dateExperience: "Nov 2021 - Present",
+  },
+
+  {
+    titleExperience: "Team Lead",
+    listExperience: [
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, asperiores!",
+      "Lorem ipsum dolor sit amet.",
+    ],
+    dateExperience: "Jul 2017 - Oct 2021",
+  },
+  {
+    titleExperience: "Full Stack Developer",
+    listExperience: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    ],
+    dateExperience: "Dec 2015 - May 2017",
+  },
+];
+---
+
+<section id="experience" class="bg-gray-50 dark:bg-gray-900 py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <Heading title="Experience" />
+    <p class="mb-6 md:mb-12 mt-[-24px] text-center text-xl">
+      Here is a quick summary of my most recent experience:
+    </p>
+
+    <div class="flex flex-col gap-6 md:gap-12 max-w-4xl mx-auto">
+      {
+        experiences.map((item) => (
+          <ItemExperience
+            titleExperience={item.titleExperience}
+            listExperience={item.listExperience}
+            dateExperience={item.dateExperience}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

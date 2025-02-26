@@ -1,0 +1,72 @@
+---
+import ButtonGithub from "./buttons/ButtonGithub.astro";
+import ButtonX from "./buttons/ButtonX.astro";
+import ButtonFigma from "./buttons/ButtonFigma.astro";
+---
+
+<section class="py-16 md:py-24">
+  <div
+    class="max-w-7xl px-4 md:px-8 mx-auto flex flex-col-reverse md:flex-row flex-[3_1_0] justify-between items-center md:items-start gap-12">
+    <div class="w-full md:w-3xl flex flex-col gap-12">
+      <div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-2">Hi, I'm Sagar 👋</h1>
+        <p>
+          I'm a full stack developer (React.js & Node.js) with a focus on
+          creating (and occasionally designing) exceptional digital experiences
+          that are fast, accessible, visually appealing, and responsive. Even
+          though I have been creating web applications for over 7 years, I still
+          love it as if it was something new.
+        </p>
+      </div>
+      <ul class="flex gap-2 flex-col">
+        <li class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0">
+            </path><path
+              d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
+            </path>
+          </svg>
+          <span>Ahmedabad, India</span>
+        </li>
+        <li class="flex items-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="#10B981"
+            class="icon icon-tabler icons-tabler-filled icon-tabler-circle p-1.5">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+              d="M7 3.34a10 10 0 1 1 -4.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 4.995 -8.336z">
+            </path>
+          </svg>
+          <span>Available for new projects</span>
+        </li>
+      </ul>
+      <p class="flex gap-4">
+        <ButtonGithub />
+        <ButtonX />
+        <ButtonFigma />
+      </p>
+    </div>
+    <div
+      class="w-full md:w-sm flex justify-center md:justify-end me-0 md:me-8 pb-12 md:pb-0">
+      <img
+        src="/images/sagar_pic.jpg"
+        alt="Sagar"
+        class="border-8 border-white dark:border-gray-900 shadow-[0px_24px_0px_12px_rgba(229,231,235,1)] md:shadow-[24px_24px_0px_0px_rgba(229,231,235,1)] w-[240px] md:w-[288px] dark:shadow-gray-700"
+      />
+    </div>
+  </div>
+</section>

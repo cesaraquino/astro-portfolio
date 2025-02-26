@@ -1,0 +1,16 @@
+---
+import Heading from "./headings/Heading.astro";
+import ItemWork from "./blocks/ItemWork.astro";
+---
+
+<section id="work" class="py-16 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <Heading title="Work" />
+    <p class="mb-6 md:mb-12 mt-[-24px] text-center text-xl">
+      Some of the noteworth projects I have built:
+    </p>
+    <div class="max-w-6xl mx-auto flex flex-col gap-6 md:gap-12">
+      <ItemWork />
+    </div>
+  </div>
+</section>
